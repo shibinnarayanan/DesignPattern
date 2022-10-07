@@ -1,0 +1,29 @@
+Singleton Class (Singleton pattern)
+==========================
+It is a class which allows us to create only one object of it.
+After the first time if we try to instantiate the Singleton class the new variable also points to first instance created 
+It restricts the unnecessary creation of object.
+
+It is not a keyword it is program approach.
+
+Steps to create Singleton class
+============================================
+1 Declare a static variable for the instance of the singleton class
+2 Create private constructor which restrict the creation of new instance of the class
+3 Create a static method  which return object of singleton class
+
+A private static variable, holding the only instance of the class.
+A private constructor, so it cannot be instantiated anywhere else.
+A public static method, to return the single instance of the class.
+
+Advantage of Singleton Class
+================================================================
+1 Primary purpose is to restrict the object creation to one time only.so it will give
+access control to resources for example socket or database connection
+
+2 It save memory since it create only object one time
+
+3 We can use the single object repeatedly as per the requirement .This is the reason
+why multithreaded and database applications mostly makes use of singleton class.
+
+For caching,logging ,thread pooling,configuration settings in these cases java uses singleton pattern
