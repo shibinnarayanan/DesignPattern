@@ -19,15 +19,15 @@ public class GenerateRunningSerialNo {
 		{
 			runningDig = "000"+Count;
 		}
-		if(length == 2)
+		else if(length == 2)
 		{
 			runningDig = "00"+Count;
 		}
-		if(length == 3)
+		else if(length == 3)
 		{
 			runningDig = "0"+Count;
 		}
-		if(length == 4)
+		else if(length == 4)
 		{
 			runningDig = String.valueOf(Count);
 		}
